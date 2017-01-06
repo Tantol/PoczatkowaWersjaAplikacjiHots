@@ -1,6 +1,6 @@
 package Characters;
 
-public class Abilities {
+public class Abilitie {
 	//Info about abilitie
 	public String name;
 	public double cooldown;
