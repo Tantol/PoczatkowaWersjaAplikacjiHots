@@ -21,7 +21,7 @@ public class CharacterMenu extends JFrame {
 		JMenuBar menubar = new JMenuBar();
 		JMenu menuFile = new JMenu("File");
 		JMenuItem menuClose = new JMenuItem("Close");
-		JMenuItem menuAboutTheProgram = new JMenu("About this project");
+		JMenuItem menuAboutTheProgram = new JMenu("About the program");
 		menuFile.add(menuAboutTheProgram);
 		menuFile.add(new JSeparator());
 		menuFile.add(menuClose);
