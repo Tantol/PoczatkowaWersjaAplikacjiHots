@@ -23,15 +23,9 @@ import java.awt.FlowLayout;
 			}
 			
 			
-			JMenuBar menubar = new JMenuBar();
-			JMenu menuFile = new JMenu("File");
-			JMenuItem menuClose = new JMenuItem("Close");
-			JMenuItem menuAboutTheProgram = new JMenu("About the program");
-			menuFile.add(menuAboutTheProgram);
-			menuFile.add(new JSeparator());
-			menuFile.add(menuClose);
-			menubar.add(menuFile);
-			setJMenuBar(menubar);
+
+					new  MenuBarAtTop();
+
 			
 			setVisible(true);
 			
