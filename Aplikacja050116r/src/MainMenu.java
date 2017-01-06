@@ -4,7 +4,7 @@
 import java.awt.EventQueue;
 import java.awt.FlowLayout;
 
-	public class MainMenu extends Frame implements ActionListener{
+	public class MainMenu extends Frame{
 		private JButton option;
 		String[] names = { "Map", "Champion" };
 		
