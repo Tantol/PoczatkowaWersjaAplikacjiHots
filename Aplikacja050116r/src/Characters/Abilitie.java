@@ -1,6 +1,6 @@
 package Characters;
 
-public class Abilities {
+public class Abilitie {
 	//Info about abilitie
 	public String name;
 	public double cooldown;
@@ -23,8 +23,9 @@ public class Abilities {
 	//Just effects
 	public boolean range;
 	public boolean aEoDMG;
+	public boolean passive;
 	
-	public Abilities(String name){
+	public Abilitie(String name){
 		this.name=name;
 		this.cooldown=0;
 		this.time=0;
@@ -46,8 +47,10 @@ public class Abilities {
 		//Just effects
 		this.range=false;
 		this.aEoDMG=false;
+		this.passive=false;
 	}
-	//Info about abilitie
+	//SET
+	    //Info about abilitie
 	    public void name(String name){this.name=name;}
 		public void cooldown(double cooldown){this.cooldown=cooldown;}
 		public void time(double time){this.time=time;}
@@ -68,8 +71,32 @@ public class Abilities {
 		//Just effects
 		public void range(boolean answer){this.range=answer;}
 		public void aEoDMG(boolean answer){this.aEoDMG=answer;}
-		
-		public void info(){}
+		public void passive(boolean answer){this.passive=answer;}
+		public void info(String info){this.info=info;}
+	//GET
+		//Info about abilitie
+	    public String name(){return name;}
+		public double cooldown(){return cooldown;}
+		public double time(){return time;}
+		public double value(){return value;}
+		public double rangeOfSkill(){return rangeOfSkill;}
+		//Negative effects of skills [Debuffs]
+		public boolean stun(){return stun;}
+		public boolean silent(){return silent;}
+		public boolean blinde(){return blinde;}
+		public boolean damageOverTime(){return damageOverTime;}
+		public boolean dmg(){return dmg;}
+		public boolean cripple(){return cripple;}
+		public boolean slow(){return slow;}
+		//Positive effects of skills [Buffs]
+		public boolean heal(){return heal;}
+		public boolean speed(){return speed;}
+		public boolean shield(){return shield;}
+		//Just effects
+		public boolean range(){return range;}
+		public boolean aEoDMG(){return aEoDMG;}
+		public boolean passive(){return passive;}
+		public String info(){return info;}
 	
 
 	
