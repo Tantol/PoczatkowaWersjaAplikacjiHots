@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-public class Frame extends JFrame implements ActionListener{
+public abstract class Frame extends JFrame implements ActionListener{
 	public Frame(){ 
 	super ("Program");
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,19 +24,27 @@ public class Frame extends JFrame implements ActionListener{
 	setJMenuBar(menubar);
 	setVisible(true);
 	}
+	
+	public void taskMenu(ActionEvent e){
+		String label = e.getActionCommand();
+		if(label.equals("Close")){
+			System.exit(0);
+		}
+		else if(label.equals("About the program")){
+			JOptionPane.showMessageDialog(null,"@Tantol \n @DoneQ \n @marohcab \n");
+		}
+	}
+	public abstract void taskOther(ActionEvent event);
 
 public void actionPerformed(ActionEvent e){
-	String label = e.getActionCommand();
-	
-	if(label.equals("Close")){
-		System.exit(0);
+	taskMenu(e);
+	taskOther(e);
 	}
-	else if(label.equals("About the program")){
-		JOptionPane.showMessageDialog(null,"@Tantol \n @DoneQ \n @marohcab \n");
-	}
+		
 	
 	
-	}
+	
+	
 
 
 }

@@ -15,7 +15,8 @@ String[] names = {"Haunted Mines","Towers of Doom","Infernal Shrines","Battlefie
 		}
 	}
 	
-	public void actionPerformed(ActionEvent event){
+	public void taskOther(ActionEvent event){
+	
 		String label = event.getActionCommand();
 		for(String name: names){
 			if(label.equals(name)){
@@ -24,5 +25,6 @@ String[] names = {"Haunted Mines","Towers of Doom","Infernal Shrines","Battlefie
 		
 		}
 		
-		}
+		
+	}
 }

@@ -16,7 +16,7 @@ import java.awt.FlowLayout;
 			}	
 		}
 		
-		public void actionPerformed(ActionEvent e){
+		public void taskOther(ActionEvent e){
 			String label = e.getActionCommand();
 			
 			if(label.equals("Map")){

@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
 
 public class CharacterMenu extends Frame {
 	private JButton characterName;
@@ -11,5 +12,6 @@ public class CharacterMenu extends Frame {
 			add(characterName);
 		}	
 	}
-
+	public void taskOther(ActionEvent event){}
+	
 }
