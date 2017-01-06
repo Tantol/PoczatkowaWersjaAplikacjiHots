@@ -5,6 +5,11 @@ public class Champion {
 	public Abilitie passiveD;
 	public Abilitie heroSkill1;
 	public Abilitie heroSkill2;
+	public String name;
+	
+	public Champion(String name){
+		this.name=name;
+	}
 	
 	public void skillQ(String name){this.skillQ(name);}
 	public void skillW(String name){this.skillW(name);}
