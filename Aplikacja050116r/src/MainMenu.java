@@ -4,30 +4,17 @@
 import java.awt.EventQueue;
 import java.awt.FlowLayout;
 
-	public class MainMenu extends JFrame implements ActionListener{
+	public class MainMenu extends Frame implements ActionListener{
 		//private JLabel informationAboutChampion;
 		private JButton option;
 		String[] names = { "Map", "Champion" };
 		
 		public MainMenu(){
-			super("Choose your option");
-			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setSize(800,400);
-			setLocationRelativeTo(null);
-			setLayout(new FlowLayout(FlowLayout.CENTER, 10, 50));
-			
 			for(String name : names){
 				option = new JButton(name);
 				add(option);
 				option.addActionListener(this);
-			}
-			
-			
-					new  MenuBarAtTop();
-
-			
-			setVisible(true);
-			
+			}	
 		}
 		
 		public void actionPerformed(ActionEvent e){

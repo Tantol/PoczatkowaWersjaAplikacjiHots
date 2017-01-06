@@ -6,15 +6,11 @@ import javax.swing.*;
 
 public class Frame extends JFrame implements ActionListener{
 	public Frame(){ 
-	super ("Test");
+	super ("Program");
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	setSize(800,400);
 	setLocationRelativeTo(null);
 	setLayout(new FlowLayout(FlowLayout.CENTER, 10, 50));
-	
-	
-	setVisible(true);
-	
 	JMenuBar menubar = new JMenuBar();
 	JMenu menuFile = new JMenu("File");
 	JMenuItem menuClose = new JMenuItem("Close");
@@ -26,6 +22,7 @@ public class Frame extends JFrame implements ActionListener{
 	menuFile.add(menuClose);
 	menubar.add(menuFile);
 	setJMenuBar(menubar);
+	setVisible(true);
 	}
 
 public void actionPerformed(ActionEvent e){
