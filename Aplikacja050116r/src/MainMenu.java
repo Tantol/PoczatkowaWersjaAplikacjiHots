@@ -23,7 +23,6 @@ import java.awt.FlowLayout;
 			}
 			
 			
- //
 					new  MenuBarAtTop();
 
 			
@@ -62,24 +61,7 @@ import java.awt.FlowLayout;
 	
 	
 	/*
-	 String label = e.getActionCommand();
- if(label.equals("Otworz plik"))
-
-	Object zrodlo = e.getSource();
- if(zrodlo == oblicz)
- {
- try {
- double a = Double.parseDouble(element1.getText());
- double b = Double.parseDouble(element2.getText());
-
- wynik.setText(a*b+"");
- }
- catch (NumberFormatException ev) {
- JOptionPane.showMessageDialog(null, "Wpisz poprawne
- wartosci!", "Blad argumentow!?",
-JOptionPane.ERROR_MESSAGE);
- }
- }
+	
 */
 	 
 	
