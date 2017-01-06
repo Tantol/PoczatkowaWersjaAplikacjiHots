@@ -8,5 +8,5 @@ public class Camp {
 		start = 0;
 	}
 	public void setCooldown(double cd){cooldown = cd;}
-	public void serStart(double s){start = s;}
+	public void setStart(double s){start = s;}
 }
