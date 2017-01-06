@@ -1,7 +1,11 @@
 package Maps;
 
 public class Map {
-	public map(){
+	String name;
+	int lanes;
+	
+	
+	public Map(){
 		
 	}
 }
