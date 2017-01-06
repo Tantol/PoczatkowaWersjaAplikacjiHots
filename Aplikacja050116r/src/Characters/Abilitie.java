@@ -25,7 +25,7 @@ public class Abilitie {
 	public boolean aEoDMG;
 	public boolean passive;
 	
-	public Abilities(String name){
+	public Abilitie(String name){
 		this.name=name;
 		this.cooldown=0;
 		this.time=0;
