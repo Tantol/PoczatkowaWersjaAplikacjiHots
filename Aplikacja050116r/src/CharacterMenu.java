@@ -12,10 +12,22 @@ public class CharacterMenu extends JFrame {
 		setSize(800,400);
 		setLocationRelativeTo(null);
 		setLayout(new FlowLayout(FlowLayout.CENTER, 10, 50));
+		
 		for(String name : names){
 			characterName = new JButton(name);
 			add(characterName);
 		}
+		
+		JMenuBar menubar = new JMenuBar();
+		JMenu menuFile = new JMenu("File");
+		JMenuItem menuClose = new JMenuItem("Close");
+		JMenuItem menuAboutTheProgram = new JMenu("About this project");
+		menuFile.add(menuAboutTheProgram);
+		menuFile.add(new JSeparator());
+		menuFile.add(menuClose);
+		menubar.add(menuFile);
+		setJMenuBar(menubar);
+		
 		setVisible(true);
 		
 	}
