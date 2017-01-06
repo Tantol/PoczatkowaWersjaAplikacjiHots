@@ -25,5 +25,4 @@ String[] names = {"Haunted Mines","Towers of Doom","Infernal Shrines","Battlefie
 		}
 		
 		}
-	
 }
