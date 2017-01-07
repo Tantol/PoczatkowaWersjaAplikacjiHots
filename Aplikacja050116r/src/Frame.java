@@ -1,3 +1,4 @@
+import java.awt.EventQueue;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,14 +18,17 @@ public abstract class Frame extends JFrame implements ActionListener{
 	menuClose.addActionListener(this); 
 	JMenuItem menuAboutTheProgram = new JMenuItem("About the program");
 	menuAboutTheProgram.addActionListener(this); 
+	JMenuItem menuBack = new JMenuItem("Main menu");
+	menuBack.addActionListener(this);
 	menuFile.add(menuAboutTheProgram);
+	menuFile.add(new JSeparator());
+	menuFile.add(menuBack);
 	menuFile.add(new JSeparator());
 	menuFile.add(menuClose);
 	menubar.add(menuFile);
 	setJMenuBar(menubar);
 	setVisible(true);
 	}
-	
 	public void taskMenu(ActionEvent e){
 		String label = e.getActionCommand();
 		if(label.equals("Close")){
@@ -32,6 +36,13 @@ public abstract class Frame extends JFrame implements ActionListener{
 		}
 		else if(label.equals("About the program")){
 			JOptionPane.showMessageDialog(null,"@Tantol \n @DoneQ \n @marohcab \n");
+		}
+		else if(label.equals("Main menu")){
+			EventQueue.invokeLater(new Runnable() {
+				 public void run() {
+					 new MainMenu();
+					 }
+				 });
 		}
 	}
 	public abstract void taskOther(ActionEvent event);
